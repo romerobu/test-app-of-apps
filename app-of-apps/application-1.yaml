@@ -5,8 +5,8 @@ metadata:
   namespace: test-gitops
 spec:
   destination:
-    namespace: test-1
     server: 'https://kubernetes.default.svc'
+    namespace: test-1
   project: default
   source:
     path: deployment-1/

@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: test-1
+  name: test-3
   namespace: test-gitops
 spec:
   destination:
-    namespace: test-1
     server: 'https://kubernetes.default.svc'
+    namespace: test-3
   project: default
   source:
-    path: deployment-1/
+    path: deployment-3/
     repoURL: 'https://github.com/romerobu/test-app-of-apps.git'
     targetRevision: HEAD
