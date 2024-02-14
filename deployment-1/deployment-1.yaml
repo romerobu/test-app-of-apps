@@ -35,4 +35,4 @@ spec:
       maxUnavailable: 25%
       maxSurge: 25%
   revisionHistoryLimit: 1
-  progressDeadlineSeconds: 600
+  progressDeadlineSeconds: 10
