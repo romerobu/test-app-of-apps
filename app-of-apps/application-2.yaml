@@ -5,10 +5,10 @@ metadata:
   namespace: test-gitops
 spec:
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: 'https://api.ocp2.sandbox97.opentlc.com:6443'
     namespace: test-2
   project: default
   source:
     path: deployment-2/
     repoURL: 'https://github.com/romerobu/test-app-of-apps.git'
-    targetRevision: HEAD
+    targetRevision: demo-acm
