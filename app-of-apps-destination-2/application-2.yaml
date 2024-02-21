@@ -12,3 +12,6 @@ spec:
     path: deployment-2/
     repoURL: 'https://github.com/romerobu/test-app-of-apps.git'
     targetRevision: demo-acm
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
