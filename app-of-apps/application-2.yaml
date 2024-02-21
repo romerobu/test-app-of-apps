@@ -5,7 +5,7 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    server: 'https://api.ocp1.sandbox97.opentlc.com:6443'
+    server: 'https://api.ocp2.sandbox97.opentlc.com:6443'
     namespace: test-gitops
   project: default
   source:
