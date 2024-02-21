@@ -2,13 +2,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: test-1
-  namespace: openshift-gitops
+  namespace: test-gitops
 spec:
   destination:
-    server: 'https://api.ocp1.sandbox97.opentlc.com:6443'
-    namespace: test-gitops
+    server: 'https://kubernetes.default.svc'
+    namespace: test-1
   project: default
   source:
-    path: app-of-apps-destination/
+    path: deployment-1/
     repoURL: 'https://github.com/romerobu/test-app-of-apps.git'
     targetRevision: demo-acm
