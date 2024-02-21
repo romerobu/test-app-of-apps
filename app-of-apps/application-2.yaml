@@ -9,6 +9,6 @@ spec:
     namespace: test-gitops
   project: default
   source:
-    path: app-of-apps-destination/application-2.yaml
+    path: app-of-apps-destination-2/
     repoURL: 'https://github.com/romerobu/test-app-of-apps.git'
     targetRevision: demo-acm
