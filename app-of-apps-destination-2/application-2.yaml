@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: test-2
+  name: test-2-in-destination
   namespace: test-gitops
 spec:
   destination:
