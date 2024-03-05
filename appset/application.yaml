@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test-appset-local
+  namespace: test-gitops
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: test-gitops
+  project: default
+  source:
+    path: deployment-3/
+    repoURL: 'https://github.com/romerobu/test-app-of-apps.git'
+    targetRevision: demo-acm
